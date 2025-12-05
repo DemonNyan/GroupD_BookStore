@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nway Oo Book Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="font/bootstrap-icons.min.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <i class="bi bi-cloud-sun"></i>
+        <h1>Nway Oo</h1>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="books.html">Books</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <span id="openNav"><i class="bi bi-justify"></i></span>
+    </nav>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" id="closeNav">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="books.html">Books</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <main class="contact-container">
+      <h2 class="section-title">
+        Send Us <i class="bi bi-telegram"></i> Your Feedback
+      </h2>
+      <form id="feedbackForm" class="form-card" novalidate>
+        <div class="input-gp-name">
+          <i class="bi bi-person"></i>
+          <input type="text" id="name" placeholder="Your Name" required />
+        </div>
+        <p id="nameFormError" class="form-error"></p>
+        <div class="input-gp-email">
+          <i class="bi bi-google"></i>
+          <input type="email" id="email" placeholder="Your Email" required />
+        </div>
+        <p id="emailFormError" class="form-error"></p>
+        <div class="input-gp-message">
+          <i class="bi bi-mailbox"></i>
+          <!-- <textarea id="message" placeholder="Your Message" required></textarea> -->
+          <input type="text" id="message" placeholder="Your Message" required />
+        </div>
+        <p id="messageFormError" class="form-error"></p>
+        <span id="count">Character Count: 0</span>
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </main>
+    <footer>
+      <p>&copy; 2025 Mini BookStore</p>
+    </footer>
+  </body>
+  <script src="validate.js"></script>
+  <script src="carousel.js"></script>
+</html>
