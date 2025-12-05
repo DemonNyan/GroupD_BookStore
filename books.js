@@ -107,7 +107,7 @@ function generateBookCard() {
     bookCard.classList.add("book-card");
     bookCard.setAttribute("data-genre", `${book.genre}`);
     bookCard.innerHTML = ` 
-        <img src="Images/${book.img}" alt="" />
+        <img src="./${book.img}" alt="" />
         <div class="text-container">
           <p id="book-name">${book.title}</p>
           <p>Author: ${book.author}</p>
@@ -148,3 +148,4 @@ searchBox.addEventListener("change", function () {
     }
   });
 });
+
